@@ -1,0 +1,92 @@
+﻿  pch.cpp
+  AudioClientDLL.cpp
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(12,32): warning C4273: 'InitializeClient': inconsistent dll linkage
+  (compiling source file '/AudioClientDLL.cpp')
+  C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.h(11,29):
+  see previous definition of 'InitializeClient'
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(16,38): warning C4101: 'e': unreferenced local variable
+  (compiling source file '/AudioClientDLL.cpp')
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(22,32): warning C4273: 'ConnectToServer': inconsistent dll linkage
+  (compiling source file '/AudioClientDLL.cpp')
+  C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.h(12,29):
+  see previous definition of 'ConnectToServer'
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(28,38): warning C4101: 'e': unreferenced local variable
+  (compiling source file '/AudioClientDLL.cpp')
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(33,42): warning C4273: 'GetFileList': inconsistent dll linkage
+  (compiling source file '/AudioClientDLL.cpp')
+  C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.h(13,39):
+  see previous definition of 'GetFileList'
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(52,38): warning C4101: 'e': unreferenced local variable
+  (compiling source file '/AudioClientDLL.cpp')
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(64,32): warning C4273: 'RequestAudioTrack': inconsistent dll linkage
+  (compiling source file '/AudioClientDLL.cpp')
+  C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.h(14,29):
+  see previous definition of 'RequestAudioTrack'
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(70,38): warning C4101: 'e': unreferenced local variable
+  (compiling source file '/AudioClientDLL.cpp')
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(75,32): warning C4273: 'StartStreaming': inconsistent dll linkage
+  (compiling source file '/AudioClientDLL.cpp')
+  C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.h(16,29):
+  see previous definition of 'StartStreaming'
+  
+C:\Users\ipman\source\repos\spdll\spdll\AudioClientDLL.cpp(81,38): warning C4101: 'e': unreferenced local variable
+  (compiling source file '/AudioClientDLL.cpp')
+  
+  AudioStreamer.cpp
+  DirectSoundManager.cpp
+  dllmain.cpp
+  MusicClient.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244: 'argument': conversion from 'wchar_t' to 'const _Elem', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244:             _Elem=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244:         ]
+  (compiling source file '/MusicClient.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\ipman\source\repos\spdll\spdll\MusicClient.cpp(75,30):
+  	see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+  		C:\Users\ipman\source\repos\spdll\spdll\MusicClient.cpp(75,30):
+  		see the first reference to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' in 'MusicClient::RequestAudioTrack'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2590,17):
+  	see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned int,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned int
+          ]
+  
+  Generating Code...
+     Creating library C:\Users\ipman\source\repos\spdll\Debug\spdll.lib and object C:\Users\ipman\source\repos\spdll\Debug\spdll.exp
+AudioStreamer.obj : error LNK2019: unresolved external symbol __imp__recv@16 referenced in function "private: int __thiscall AudioStreamer::ReceiveAudioChunk(char *,int)" (?ReceiveAudioChunk@AudioStreamer@@AAEHPADH@Z)
+MusicClient.obj : error LNK2001: unresolved external symbol __imp__recv@16
+AudioStreamer.obj : error LNK2019: unresolved external symbol __imp__WSAGetLastError@0 referenced in function "private: int __thiscall AudioStreamer::ReceiveAudioChunk(char *,int)" (?ReceiveAudioChunk@AudioStreamer@@AAEHPADH@Z)
+MusicClient.obj : error LNK2001: unresolved external symbol __imp__WSAGetLastError@0
+AudioStreamer.obj : error LNK2001: unresolved external symbol _IID_IDirectSoundNotify
+DirectSoundManager.obj : error LNK2001: unresolved external symbol _IID_IDirectSoundNotify
+DirectSoundManager.obj : error LNK2019: unresolved external symbol _DirectSoundCreate8@12 referenced in function "private: void __thiscall DirectSoundManager::CreateDirectSoundObject(void)" (?CreateDirectSoundObject@DirectSoundManager@@AAEXXZ)
+MusicClient.obj : error LNK2019: unresolved external symbol __imp__closesocket@4 referenced in function "public: __thiscall MusicClient::~MusicClient(void)" (??1MusicClient@@QAE@XZ)
+MusicClient.obj : error LNK2019: unresolved external symbol __imp__connect@12 referenced in function "public: void __thiscall MusicClient::ConnectAndPrepareStreamer(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?ConnectAndPrepareStreamer@MusicClient@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)
+MusicClient.obj : error LNK2019: unresolved external symbol __imp__htons@4 referenced in function "public: void __thiscall MusicClient::ConnectAndPrepareStreamer(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?ConnectAndPrepareStreamer@MusicClient@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)
+MusicClient.obj : error LNK2019: unresolved external symbol __imp__send@16 referenced in function "public: void __thiscall MusicClient::RequestAudioTrack(class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > const &)" (?RequestAudioTrack@MusicClient@@QAEXABV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z)
+MusicClient.obj : error LNK2019: unresolved external symbol __imp__socket@12 referenced in function "public: void __thiscall MusicClient::ConnectAndPrepareStreamer(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?ConnectAndPrepareStreamer@MusicClient@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)
+MusicClient.obj : error LNK2019: unresolved external symbol __imp__WSAStartup@8 referenced in function "public: __thiscall MusicClient::MusicClient(struct HWND__ *)" (??0MusicClient@@QAE@PAUHWND__@@@Z)
+MusicClient.obj : error LNK2019: unresolved external symbol __imp__WSACleanup@0 referenced in function "public: __thiscall MusicClient::~MusicClient(void)" (??1MusicClient@@QAE@XZ)
+MusicClient.obj : error LNK2019: unresolved external symbol __imp__inet_pton@12 referenced in function "public: void __thiscall MusicClient::ConnectAndPrepareStreamer(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?ConnectAndPrepareStreamer@MusicClient@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)
+C:\Users\ipman\source\repos\spdll\Debug\spdll.dll : fatal error LNK1120: 12 unresolved externals
