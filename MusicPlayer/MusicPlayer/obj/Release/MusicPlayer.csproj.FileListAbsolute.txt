@@ -1,0 +1,10 @@
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\bin\Release\MusicPlayer.exe.config
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\bin\Release\MusicPlayer.exe
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\bin\Release\MusicPlayer.pdb
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\obj\Release\MusicPlayer.csproj.AssemblyReference.cache
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\obj\Release\MusicPlayer.Form1.resources
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\obj\Release\MusicPlayer.Properties.Resources.resources
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\obj\Release\MusicPlayer.csproj.GenerateResource.cache
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\obj\Release\MusicPlayer.csproj.CoreCompileInputs.cache
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\obj\Release\MusicPlayer.exe
+C:\Users\ipman\source\repos\MusicPlayer\MusicPlayer\obj\Release\MusicPlayer.pdb
